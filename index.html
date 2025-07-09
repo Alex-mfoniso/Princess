@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Modern Essentials</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Modern Essentials</div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero animate-fade-up">
+      <h1>Upgrade Your Kitchen & Bathroom</h1>
+      <p>Modern utensils, WC showers & accessories for every Nigerian home.</p>
+      <a href="products.html" class="btn animate-pop">Explore Products</a>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="features">
+      <h2>What We Offer</h2>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <i class="fa-solid fa-kitchen-set"></i>
+          <h3>Kitchen Essentials</h3>
+          <p>
+            Durable and stylish tools designed to make cooking efficient and
+            enjoyable.
+          </p>
+        </div>
+        <div class="feature-box">
+          <img src="images/shower-icon.png" alt="WC Showers" />
+          <h3>WC Showers</h3>
+          <p>Modern designs, strong pressure, built for hygiene and comfort.</p>
+        </div>
+        <div class="feature-box">
+          <img src="images/accessory-icon.png" alt="Accessories" />
+          <h3>Bathroom Accessories</h3>
+          <p>
+            Elegant fixtures and fittings that complement any home interior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Preview Section -->
+    <section class="preview">
+      <h2>Our Best Picks</h2>
+      <div class="preview-grid">
+        <div class="preview-item">
+          <img src="images/spatula-set.jpg" alt="Spatula Set" />
+          <p>Non-stick Spatula Set</p>
+        </div>
+        <div class="preview-item">
+          <img src="images/wc-shower.jpg" alt="WC Shower" />
+          <p>Handheld WC Shower</p>
+        </div>
+        <div class="preview-item">
+          <img src="images/sink-faucet.jpg" alt="Sink Faucet" />
+          <p>Stainless Sink Faucet</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Customers Say</h2>
+      <blockquote>
+        "These products changed how I cook and clean. Great quality!"
+        <br /><span>- Mrs. Okoro, Lekki</span>
+      </blockquote>
+      <blockquote>
+        "Stylish, functional, and reliable. I love the WC showers!"
+        <br /><span>- Mr. Sanni, Abuja</span>
+      </blockquote>
+    </section>
+
+    <!-- Call-to-action Strip -->
+    <section class="cta-strip">
+      <h2>Want to see more?</h2>
+      <p>Check out our full collection of products curated for modern homes.</p>
+      <a href="products.html" class="btn">Browse Products</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Modern Essentials. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const links = document.querySelector(".nav-links");
+        links.classList.toggle("show");
+      }
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/2348101234567"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Chat with us on WhatsApp"
+>
+  <img src="img/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+  </body>
+</html>

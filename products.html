@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Modern Essentials</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Modern Essentials</div>
+    <nav id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <h1>Our Products</h1>
+    <p>Explore some of the finest kitchen & bathroom essentials we offer.</p>
+  </section>
+
+  <!-- Search Bar -->
+<section class="search-bar">
+  <input
+    type="text"
+    id="productSearch"
+    placeholder="Search for a product..."
+  />
+</section>
+
+
+   <!-- Filter Buttons  -->
+<!-- Filter Buttons -->
+<section class="filter-menu">
+  <button class="filter-btn active" data-category="all">
+    🛒 All
+  </button>
+  <button class="filter-btn" data-category="kitchen">
+    🍳 Kitchen
+  </button>
+  <button class="filter-btn" data-category="bathroom">
+    🚿 Bathroom
+  </button>
+  <button class="filter-btn" data-category="accessories">
+    🧴 Accessories
+  </button>
+</section>
+
+
+<!-- Product Grid with Category Tags -->
+<section class="product-grid">
+  <div class="product-card" data-category="kitchen">
+  <span class="badge new">New</span>
+  <img src="images/spatula-set.jpg" alt="Spatula Set" />
+  <h3>Non-Stick Spatula Set</h3>
+</div>
+
+  <div class="product-card" data-category="bathroom">
+    <img src="images/wc-shower.jpg" alt="Handheld WC Shower">
+    <h3>Handheld WC Shower</h3>
+  </div>
+  <div class="product-card" data-category="kitchen">
+    <img src="images/sink-faucet.jpg" alt="Sink Faucet">
+    <h3>Stainless Sink Faucet</h3>
+  </div>
+  <div class="product-card" data-category="kitchen">
+  <span class="badge top">Top Pick</span>
+  <img src="images/knife-set.jpg" alt="Knife Set" />
+  <h3>Professional Knife Set</h3>
+</div>
+
+  <div class="product-card" data-category="accessories">
+    <img src="images/soap-dispenser.jpg" alt="Soap Dispenser">
+    <h3>Soap Dispenser</h3>
+  </div>
+  <div class="product-card" data-category="bathroom">
+    <img src="images/bathroom-shelf.jpg" alt="Bathroom Shelf">
+    <h3>Corner Bathroom Shelf</h3>
+  </div>
+</section>
+
+<div class="pagination">
+  <button id="prevPage">&laquo;</button>
+  <span id="pageNumber">1</span>
+  <button id="nextPage">&raquo;</button>
+</div>
+
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img id="lightbox-img" src="" alt="Preview" />
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Modern Essentials. All rights reserved.</p>
+  </footer>
+
+
+
+  <script src="./app.js"></script>
+  </script>
+ <!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/2348101234567"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Chat with us on WhatsApp"
+>
+  <img src="img/WhatsApp.svg" alt="WhatsApp" />
+</a>
+</body>
+</html>
