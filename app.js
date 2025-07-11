@@ -123,10 +123,21 @@ function showPage() {
 
   // Update page number display
   document.getElementById("pageNumber").innerText = currentPage;
+//   document.getElementById("pageNumber").innerText = currentPage;
+
 
   // Enable/disable buttons
   document.getElementById("prevPage").disabled = currentPage === 1;
   document.getElementById("nextPage").disabled = currentPage === totalPages || totalPages === 0;
+  updateNoResults();
+}
+
+function updateNoResults() {
+  const productCards = document.querySelectorAll('.product-card');
+  const noResults = document.getElementById('noResults');
+  // Check if any product card is visible
+  const anyVisible = Array.from(productCards).some(card => card.style.display !== 'none');
+  noResults.style.display = anyVisible ? 'none' : 'block';
 }
 
 
@@ -147,3 +158,23 @@ function filterProducts() {
 }
 
 filterProducts(); // Initial call
+
+const searchInput2 = document.getElementById('searchInput');
+const productItems = document.querySelectorAll('.product-item');
+const noResults = document.getElementById('noResults');
+
+searchInput2.addEventListener('input', () => {
+  const query = searchInput2.value.toLowerCase();
+  let matches = 0;
+
+  productItems.forEach(item => {
+    const name = item.querySelector('h3').textContent.toLowerCase();
+    const match = name.includes(query);
+
+    item.style.display = match ? 'block' : 'none';
+    if (match) matches++;
+  });
+
+  // Toggle noResults message
+  noResults.style.display = matches === 0 ? 'block' : 'none';
+});

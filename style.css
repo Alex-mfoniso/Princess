@@ -296,6 +296,32 @@ nav a:hover {
 }
 
 /* Product Grid */
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  background: #fefefe;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.no-results .btn.whatsapp-help {
+  background-color: rgb(1, 68, 33);
+  color: white;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.no-results .btn.whatsapp-help:hover {
+  background-color: rgb(3, 94, 45);
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
