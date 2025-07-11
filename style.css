@@ -56,6 +56,16 @@ header {
   z-index: 1000;
 }
 
+.logo img {
+  height: 48px;
+  width: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
