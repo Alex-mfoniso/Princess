@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Modern Essentials</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Modern Essentials</div>
+    <nav id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header fade-in">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Reach out with any questions, orders, or partnerships.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section fade-in">
+    <div class="contact-info">
+      <h2>Reach Us</h2>
+      <p><strong>Email:</strong> support@modernessentials.ng</p>
+      <p><strong>Phone:</strong> +234 810 123 4567</p>
+      <p><strong>Address:</strong> 21 Senabu Street, Lagos, Nigeria</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Optional Google Map -->
+  <!--
+  <section class="map-section fade-in">
+    <iframe 
+      src="https://www.google.com/maps?q=21+Senabu+Street,+Lagos,+Nigeria&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Modern Essentials. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a
+    href="https://wa.me/2348101234567"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Chat with us on WhatsApp"
+  >
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('show');
+    }
+
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

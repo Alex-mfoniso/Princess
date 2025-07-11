@@ -1,6 +1,4 @@
 // product js
-
-
     function toggleMenu() {
       const links = document.querySelector('.nav-links');
       links.classList.toggle('show');
@@ -29,7 +27,6 @@
     });
   });
 
-  
   // const filterButtons = document.querySelectorAll(".filter-btn");
   // const productCards = document.querySelectorAll(".product-card");
   const searchInput = document.getElementById("productSearch");
@@ -53,7 +50,6 @@
 
   function filterProducts() {
     const searchText = searchInput.value.toLowerCase();
-
     productCards.forEach(card => {
       const title = card.querySelector("h3").textContent.toLowerCase();
       const category = card.getAttribute("data-category");
@@ -92,7 +88,6 @@ window.addEventListener("click", e => {
     lightbox.style.display = "none";
   }
 });
-
 
 let currentPage = 1;
 const itemsPerPage = 6;
@@ -150,6 +145,5 @@ function filterProducts() {
   currentPage = 1;
   showPage();
 }
-
 
 filterProducts(); // Initial call

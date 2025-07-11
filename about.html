@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Modern Essentials</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Modern Essentials</div>
+    <nav id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header fade-in">
+    <h1>About Us</h1>
+    <p>We craft essentials that make your kitchen and bathroom shine with purpose and beauty.</p>
+  </section>
+
+  <!-- Who We Are -->
+  <section class="about-section fade-in">
+    <h2>Who We Are</h2>
+    <p>
+      Modern Essentials is a proudly Nigerian-owned brand dedicated to bringing quality and style into homes across the country.
+      We specialize in durable, modern, and affordable kitchen and bathroom products — from utensils and sink faucets to WC showers and accessories.
+    </p>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="about-section alt-bg fade-in">
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is simple — to deliver thoughtfully designed essentials that improve daily living and redefine comfort in the most important spaces of your home.
+    </p>
+  </section>
+
+  <!-- Our Story -->
+  <section class="about-section fade-in">
+    <h2>Our Story</h2>
+    <p>
+      Modern Essentials began with a simple idea — to bridge the gap between functionality and beauty in the home. From our humble beginnings at a local market stall, we’ve grown into a recognized brand trusted in thousands of Nigerian homes. Our commitment to quality and people-first service remains the heart of everything we do.
+    </p>
+  </section>
+
+  <!-- Image Highlight -->
+  <section class="image-highlight fade-in">
+    <img src="images/founder-or-store.jpg" alt="Founder or Store Image" />
+    <div class="image-text">
+      <h2>Made With Care</h2>
+      <p>Every product we offer is handpicked and tested for everyday durability. We don’t just sell utensils or bathroom fittings — we deliver peace of mind.</p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="about-section alt-bg fade-in">
+    <h2>What We Stand For</h2>
+    <ul class="values-list">
+      <li>✔️ Quality & Durability</li>
+      <li>✔️ Affordable Style</li>
+      <li>✔️ Customer Satisfaction</li>
+      <li>✔️ Innovation & Simplicity</li>
+    </ul>
+  </section>
+
+  <!-- Milestones / Timeline -->
+  <section class="timeline fade-in">
+    <h2>Milestones</h2>
+    <ul>
+      <li><strong>2019:</strong> Brand founded in Lagos</li>
+      <li><strong>2020:</strong> First 1000 customers served</li>
+      <li><strong>2022:</strong> Expanded to bathroom fittings</li>
+      <li><strong>2024:</strong> 10,000+ homes served nationwide</li>
+    </ul>
+  </section>
+
+  <!-- Fun Stats -->
+  <section class="fun-stats fade-in">
+    <div class="stat-box">
+      <h3>10K+</h3>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-box">
+      <h3>50+</h3>
+      <p>Product Types</p>
+    </div>
+    <div class="stat-box">
+      <h3>100%</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section fade-in">
+    <blockquote>
+      “Quality is never an accident; it is always the result of intelligent effort.”
+      <span>– John Ruskin</span>
+    </blockquote>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="about-section cta fade-in">
+    <h2>Let’s Stay Connected</h2>
+    <p>
+      Explore our <a href="products.html" class="btn">📦 Products</a> or
+      <a href="contact.html" class="btn">📞 Contact Us</a> to get started.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Modern Essentials. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a
+    href="https://wa.me/2348101234567"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Chat with us on WhatsApp"
+  >
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('show');
+    }
+
+    // Animate on scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+<script>
+    
+</script>
+</html>

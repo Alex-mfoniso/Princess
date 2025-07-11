@@ -462,6 +462,264 @@ nav a:hover {
 }
 
 
+/* about page */
+
+.about-section {
+  padding: 3rem 2rem;
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  color: rgb(1, 68, 33);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.values-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.values-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.about-section.cta {
+  background-color: rgb(208, 216, 195);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 4rem auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.about-section.cta h2 {
+  font-size: 2rem;
+  color: rgb(1, 68, 33);
+  margin-bottom: 1rem;
+}
+
+.about-section.cta p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-section.cta .btn {
+  display: inline-block;
+  margin: 1rem 0.5rem 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  background-color: rgb(1, 68, 33);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.about-section.cta .btn:hover {
+  background-color: rgb(3, 94, 45);
+  transform: translateY(-2px);
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section.cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-section.cta h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section.cta p {
+    font-size: 1rem;
+  }
+
+  .about-section.cta .btn {
+    display: block;
+    margin: 0.75rem auto 0;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+
+
+.image-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background: #fff;
+}
+
+.image-highlight img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-text {
+  flex: 1;
+}
+
+.quote-section {
+  text-align: center;
+  background: #f1f5f9;
+  padding: 3rem 2rem;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.quote-section span {
+  display: block;
+  margin-top: 1rem;
+  color: rgb(1, 68, 33);
+  font-weight: bold;
+}
+
+.timeline {
+  background: #fff;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-left: 4px solid rgb(1, 68, 33);
+  padding-left: 1rem;
+}
+
+.fun-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: rgb(208, 216, 195);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  color: rgb(1, 68, 33);
+  margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* contact page */
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 400px;
+}
+
+.contact-info h2, .contact-form h2 {
+  color: rgb(1, 68, 33);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  align-self: start;
+  background: rgb(1, 68, 33);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn:hover {
+  background: rgb(3, 94, 45);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+}
+
 
 /* Footer */
 footer {
